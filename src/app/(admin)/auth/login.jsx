@@ -1,7 +1,10 @@
+import styles from './auth.module.css'
 export default function LoginComponentOnlyForAdmin(){
     return(
-        <div>
-            Aqui se creara el componente para permitir ingresar al admin
-        </div>
+        <form className={styles.fomr_to_access}>
+            <input type="text" name="" id="" />
+            <input type="text" name="" id="" />
+            <button type="submit">Ingresar</button>
+        </form>
     )
 }

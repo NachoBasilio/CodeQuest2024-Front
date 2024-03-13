@@ -1,29 +1,29 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import InviteToDiscordChannel from "./components/invite-channel";
+import HowGetDiscordID from "./components/tutorial-id";
 export default function Home() {
   const titleWeb="{Dev/Talles} Sorteos"
   return (
     <main className={styles.main}>
-      <h3 className={styles.title_web_lottery}>{titleWeb}</h3>
+      <h1 className={styles.title_web_lottery}>{titleWeb}</h1>
       <article className={styles.reward_container}>
         <p>
-        titulo del Sorteos
+        Nombre del premio
         </p>
         <Image
-          src="/next.svg"
+          src="/images.jpeg"
           alt="imagen del premio actual"
           width={200}
           height={200}
         />
         <p>
-        foto del premio
-        contador u rango de fecha
+        Sortea el 29/03/2024
         </p>
       </article>
       <section className={styles.get_in_lottery}>
         <p>
-          Unete a nuestro canal de discord y participa con tu ID de discord
+          Unete a nuestro <InviteToDiscordChannel/> y participa utilizando tu <HowGetDiscordID/>
           </p>
         <form>
           <input className={styles.get_id_discord} type="text"/>

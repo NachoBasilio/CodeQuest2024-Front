@@ -19,6 +19,7 @@
   margin: auto;
   display: grid;
   place-items: center;
+  color: white;
 }
 .get_in_lottery{
   width: min(500px,80%);
@@ -44,10 +45,11 @@
 }
 .get_id_discord{
   width: 90%;
-  height: 80%;
+  height: 75%;
   outline: none;
   margin: auto;
-  text-indent: 10px;
+  text-align: center;
+  font-size: 20px;
 }
 .btn_verify_id_dscord{
   width: 90%;
