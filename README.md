@@ -1,8 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+## Lottery App by
+Aplicacion para gestionar sorteos con usuarion unidos a tu canal de discord :D
 
 ```bash
 npm run dev
