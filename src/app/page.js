@@ -9,7 +9,7 @@ export default function Home() {
       <h1 className={styles.title_web_lottery}>{titleWeb}</h1>
       <article className={styles.reward_container}>
         <p>
-        Nombre del premio
+       Esta notebook Asus 9953M puede ser tuya!!!
         </p>
         <Image
           src="/images.jpeg"
