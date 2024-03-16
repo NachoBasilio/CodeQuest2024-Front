@@ -4,9 +4,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #26184a;
 }
-.fomr_to_access{
-    width: 500px;
-    height: 500px;
-    outline: 2px solid black;
+.form_to_access{
+    width: min(90%,650px);
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px #00000049;
+    background: linear-gradient(135deg,#26184a 85%,#f89c56 90%,#26184a 95% );
+}
+.form_to_access > div{
+    width: max(60%,250px);
+    height: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    place-items: center;
+}
+
+.form_to_access > div > button {
+    width: fit-content;
+    height: fit-content;
+    background-color: #f89c56;
+    color: #000000;
+    padding: 5px 7px;
+    font-size: 18px;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 5px;
 }
