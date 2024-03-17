@@ -9,8 +9,12 @@ export default function LoginComponentOnlyForAdmin(){
         const fetchAdminData=async()=>{
             try {
                 const res=await verifyIfIsAdmin()
-                let checkAdmin=JSON.parse(data).isAdmin
-                setData(checkAdmin)
+                if(res === undefined){
+                    setData(false)
+                }else{
+                    let checkAdmin=JSON.parse(res).isAdmin
+                    setData(checkAdmin)
+                }
             } catch (error) {
                     console.log(error)
             }

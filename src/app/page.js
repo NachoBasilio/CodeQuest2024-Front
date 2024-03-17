@@ -30,6 +30,5 @@ export default function Home() {
           <button className={styles.btn_verify_id_dscord} type="submit">Participar</button>
         </form>
       </section>
-    </main>
-  );
+    </main>);
 }
