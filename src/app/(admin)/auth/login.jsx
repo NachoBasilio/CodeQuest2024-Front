@@ -29,7 +29,7 @@ export default function LoginComponentOnlyForAdmin(){
     }
     return(
         <>
-        {data ===  false ?
+        {data ===  true ?
             <PanelOptions/>
                     :
             <section className={styles.form_to_access} >

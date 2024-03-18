@@ -15,7 +15,6 @@ export default function Home() {
     const insertCurrentUsers=async()=>{
       try {
        const res= await getAllUsers()
-        console.log(res)
       } catch (error) {
           console.log(error)
       }
@@ -31,7 +30,6 @@ export default function Home() {
     e.preventDefault()
     const getCurrentsUsers=JSON.parse(localStorage.getItem('current_raffle_data')).participants
     if(checkDataId.test(idDiscord["user_id"]) && getCurrentsUsers.includes(idDiscord) === false){
-      console.log(idDiscord)
      window.open('https://discord.com/oauth2/authorize?client_id=1217829381645533208&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fapi%2Fauth%2Fdiscord%2Fredirect%2F1&scope=identify+guilds+email+guilds.join+guilds.members.read+connections','_blank')
       addParticipant(`${idDiscord["user_id"]}`)
     }else if(getCurrentsUsers.includes(idDiscord)){
