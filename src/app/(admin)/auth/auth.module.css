@@ -117,6 +117,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: white;
 }
 .get_winner_container > button{
     width: fit-content;
@@ -130,12 +131,11 @@
     cursor: pointer;
     padding: 7px 10px;
 }
-.get_winner_container > div{
+.get_winner_container  div{
     width: 30%;
     height: 30%;
     display: grid;
     place-items: center;
-    outline: 2px solid black;
 }
 .spinner{
     width: 30px;

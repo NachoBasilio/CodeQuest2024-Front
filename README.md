@@ -1,5 +1,5 @@
 ## Lottery App by
-Aplicacion para gestionar sorteos con usuarion unidos a tu canal de discord :D
+Aplicacion para gestionar sorteos con usuarios unidos a tu canal de discord :D
 
 ```bash
 npm run dev

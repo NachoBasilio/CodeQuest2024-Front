@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import PanelOptions from '../components/control-panel'
 export default function LoginComponentOnlyForAdmin(){
     const [data,setData]=useState(false)
-    const [loading,setLoading]=useState(false)
+    
 
     useEffect(()=>{
         const fetchAdminData=async()=>{
@@ -24,6 +24,9 @@ export default function LoginComponentOnlyForAdmin(){
         fetchAdminData()
     },[])
     const logoText="{D/T}"
+    const opentWebToAccesPermissions=()=>{
+        window.location='https://discord.com/oauth2/authorize?client_id=1217829381645533208&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fapi%2Fauth%2Fdiscord%2Fredirect%2F1&scope=identify+guilds+email+guilds.join+guilds.members.read+connections'
+    }
     return(
         <>
         {data ===  false ?
@@ -31,7 +34,7 @@ export default function LoginComponentOnlyForAdmin(){
                     :
             <section className={styles.form_to_access} >
                 <div >
-                    <button >INGRESAR con ID de admin</button>
+                    <button onClick={opentWebToAccesPermissions}>INGRESAR con ID de admin</button>
                 </div>
             </section>
         }
