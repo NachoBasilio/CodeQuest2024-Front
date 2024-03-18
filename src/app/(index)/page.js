@@ -30,6 +30,7 @@ export default function Home() {
     e.preventDefault()
     if(checkDataId.test(idDiscord["user_id"])){
       console.log(idDiscord)
+      window.open('https://discord.com/oauth2/authorize?client_id=1217936139277697134&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fapi%2Fauth%2Fdiscord%2Fredirect%2F1&scope=identify+email+guilds.join+guilds+gdm.join+connections+guilds.members.read')
     }else{
       console.log("id no valido")
     }
