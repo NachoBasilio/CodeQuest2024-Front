@@ -2,9 +2,11 @@
 import styles from './auth.module.css';
 const { verifyIfIsAdmin } = require('../../hooks/admin-verify-login').default;
 import { useState, useEffect } from 'react';
+import PanelOptions from '../components/control-panel'
 export default function LoginComponentOnlyForAdmin(){
-    const [adminSuccess,setAdminSuccess]=useState(false)
     const [data,setData]=useState(false)
+    const [loading,setLoading]=useState(false)
+
     useEffect(()=>{
         const fetchAdminData=async()=>{
             try {
@@ -20,19 +22,23 @@ export default function LoginComponentOnlyForAdmin(){
             }
         }
         fetchAdminData()
-        
     },[])
-    
+    const logoText="{D/T}"
     return(
         <>
-        {
-            data ===  true ? <div>hola aqui ira el panel de control</div>:
-        <section className={styles.form_to_access} >
-            <div >
-                <button >INGRESAR con ID de admin</button>
-            </div>
-        </section>
+        {data ===  false ?
+            <PanelOptions/>
+                    :
+            <section className={styles.form_to_access} >
+                <div >
+                    <button >INGRESAR con ID de admin</button>
+                </div>
+            </section>
         }
+        <span 
+        style={{position:'fixed',bottom:'20px',right:'20px',color:'#f89c56',fontWeight:'bolder',fontSize:'20px'}}>
+            {logoText}
+        </span>
         </>
       
     )

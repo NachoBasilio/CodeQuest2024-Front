@@ -31,13 +31,23 @@
   border-radius: 10px;
   margin: auto;
   display: grid;
-  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 70% 15%;
   color: white;
   background: linear-gradient(180deg,#f89c56 10%,#26184a 90%);
   background-size: 150% 150%;
   animation: move-color 5s ease-in-out infinite;
 }
 
+.reward_container > p{
+  width: 90%;
+  text-align: center;
+  height: fit-content;
+  margin: auto;
+}
+.reward_container > img{
+  margin: auto;
+}
 
 .get_in_lottery{
   width: min(500px,80%);

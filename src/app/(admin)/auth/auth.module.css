@@ -39,3 +39,75 @@
     cursor: pointer;
     border-radius: 5px;
 }
+.form_to_create{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+}
+.form_to_create > button{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #7289da;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 7px 10px;
+}
+.form_to_create > section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container_field_create{
+    width: 250px;
+    height: 60%;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+.container_field_create > input {
+    outline: none;
+    text-indent: 5px;
+    height: 25px;
+    border-radius: 8px;
+    border: none;
+    width: 80%;
+}
+.panel_options{
+    width: min(90%,650px);
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px #00000049;
+    background: linear-gradient(135deg,#26184a 85%,#f89c56 90%,#26184a 95% );
+}
+.panel_options > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.panel_options > div >button {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f89c56;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 7px 10px;
+}

@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 export default function InviteToDiscordChannel (){
-    const URL_Channel="https://example.com"
+    const URL_Channel="https://discord.gg/9N4RFaSR"
     return(
         <Link
          href={URL_Channel}
